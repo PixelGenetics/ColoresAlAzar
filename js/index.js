@@ -27,7 +27,7 @@ function mostrar(color1){
 
 /* ============================================================================== */
 
-
+/*
 function coloresRandom(){
     
     let color1 = "#FF0202", color2 = "#0298FF", color3 = "#02FF47"
@@ -48,17 +48,25 @@ function coloresRandom(){
     
     //console.log(cont);
 }
-
+*/
 
 /* ======================================================================== */
 
 
 let arrayColors = ["#FF0202","#0298FF","#02FF47"];
 
-function colorRandom(){
+function imprimirInformacion(){
     let resultado = Math.floor(Math.random() * arrayColors.length);
     
-    cuerpo.style.background = arrayColors[resultado];
+    let color = cuerpo.style.background = arrayColors[resultado];
+
+    mostrar1(color);
 } 
+
+function mostrar1(color2){
+    display.innerText = "Background: " + color2;
+}
+
+/* Imprimir codigo de manera dinamica, que diga background y codigo de color */
 
 
